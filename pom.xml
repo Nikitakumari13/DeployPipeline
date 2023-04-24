@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>info.maigo.lab.hello</groupId>
   <artifactId>maigolab_hello</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>1.0.0</version>
   <name>maigolab_hello</name>
   <url>http://maven.apache.org</url>
@@ -12,11 +12,9 @@
   <build>
     <plugins>
       <plugin>
-        
-        <groupId>org.apache.maven.plugins</groupId>
-   <artifactId>maven-war-plugin</artifactId>
-   <version>3.3.2</version>
-        <type>maven-plugin</type>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
         <configuration>
           <mainClass>info.maigo.lab.hello.App</mainClass>
           <arguments>
@@ -52,12 +50,7 @@
       <scope>test</scope>
     </dependency>
     
-    <dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-   <artifactId>maven-war-plugin</artifactId>
-   <version>3.3.2</version>
-   <type>maven-plugin</type>
-   </dependency>
+    
   </dependencies>
 
   <properties>
