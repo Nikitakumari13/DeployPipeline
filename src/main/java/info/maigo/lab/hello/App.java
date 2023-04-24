@@ -6,7 +6,7 @@ import com.mashape.unirest.http.*;
 public class App {
 
   public static void main(String[] args) throws Exception {
-    System.out.println("Hello World");
+    System.out.println("---->>>Hello World");
     for (String name: args) {
       System.out.println("name: " + name);
       String jsonString = new App(name).getUserInfoJSON();
