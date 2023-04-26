@@ -1,6 +1,6 @@
 node{
   stage('SCM Checkout'){
-    git 'https://github.com/Nayeem123/java-hello-world-with-maven'
+    git 'https://github.com/Nikitakumari13/DeployPipeline'
   }
   stage('compile-package'){
     // Get maven home path
