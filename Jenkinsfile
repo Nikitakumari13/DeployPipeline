@@ -8,9 +8,5 @@ node{
     sh "${mvnHome}/bin/mvn package" 
   }
   //stage('Email Notification'){}
-  stage('Deploy to Tomcat'){
-  sshagent(['tomcat-dev']) {
-    sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@172.31.7.211:/home/ec2-user/tomcat/webapps'
-}
-  }
+  
 }
